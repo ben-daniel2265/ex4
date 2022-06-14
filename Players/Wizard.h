@@ -6,7 +6,7 @@
 
 class Wizard : public Player {
     public:
-    Wizard(const char* name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
+    Wizard(std::string name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
 
     void heal(int healAmount) override;
 };

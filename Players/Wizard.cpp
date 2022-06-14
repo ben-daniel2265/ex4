@@ -4,8 +4,8 @@
 #include "Wizard.h"
 
 
-Wizard::Wizard(const char* name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK) : 
-    Player(name, baseMaxHP, baseForce){}
+Wizard::Wizard(std::string name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK) : 
+    Player(name, "Wizard", baseMaxHP, baseForce){}
 
 void Wizard::heal(int healAmount)
 {

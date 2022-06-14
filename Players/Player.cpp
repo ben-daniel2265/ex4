@@ -1,15 +1,14 @@
-#ifndef HW2_PLAYER_source
-#define HW2_PLAYER_source
+#ifndef HW4_PLAYER_source
+#define HW4_PLAYER_source
 
 #include "Player.h"
 #include "utilities.h"
-#include <string.h>
 
 #define BASE_HP 100
 #define BASE_ATTACK 5
 
 
-Player::Player(const std::string name, int baseMaxHP, int baseForce)
+Player::Player(const std::string name, std::string job, int baseMaxHP, int baseForce)
 {
     this->m_name = name;
     this->m_level = 1;
@@ -17,6 +16,7 @@ Player::Player(const std::string name, int baseMaxHP, int baseForce)
     this->m_maxHP = baseMaxHP > 0 ? baseMaxHP : BASE_HP;
     this->m_HP = baseMaxHP;
     this->m_coins = 0;
+    this->m_job = job;
 }
 
 Player::Player(const Player& player)
@@ -27,6 +27,7 @@ Player::Player(const Player& player)
     this->m_maxHP = player.m_maxHP;
     this->m_HP = player.m_HP;
     this->m_coins = player.m_coins;
+    this->m_job = player.m_job;
 }
 
 
@@ -42,14 +43,11 @@ Player& Player::operator=(const Player& player)
     this->m_maxHP = player.m_maxHP;
     this->m_HP = player.m_HP;
     this->m_coins = player.m_coins;
+    this->m_job = player.m_job;
 
     return *this;
 }
 
-
-void Player::printInfo() const
-{
-}
 
 void Player::levelUp()
 {
@@ -123,5 +121,18 @@ std::string Player::getName()
     return this->m_name;
 }
 
+void Player::knockOut()
+{
+    this->m_HP = 0;
+}
 
-#endif // HW2_PLAYER_source
+
+
+std::ostream& operator<<(std::ostream &out, Player& player)
+{
+    printPlayerDetails(out, player.m_name, player.m_job, player.m_level, player.m_force, player.m_HP, player.m_coins);
+    return out;
+}
+
+
+#endif // HW4_PLAYER_source

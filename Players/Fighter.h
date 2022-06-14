@@ -6,7 +6,7 @@
 
 class Fighter : public Player {
     public:
-    Fighter(const char* name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
+    Fighter(std::string name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
 
     int getAttackStrength() const override;
 };

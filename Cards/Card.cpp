@@ -1,5 +1,5 @@
-#ifndef EX2_Card_SOURCE
-#define EX2_Card_SOURCE
+#ifndef EX4_Card_SOURCE
+#define EX4_Card_SOURCE
 
 #include "Card.h"
 
@@ -14,4 +14,4 @@ std::ostream& operator<<(std::ostream &out, Card& card)
 }
 
 
-#endif //EX2_Card_SOURCE
+#endif //EX4_Card_SOURCE

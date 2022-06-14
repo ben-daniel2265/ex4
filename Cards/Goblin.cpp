@@ -12,17 +12,18 @@ void Goblin::applyEncounter(Player& player) const
     if(player.getAttackStrength() >= goblin_force){
         player.levelUp();
         player.addCoins(goblin_loot);
-        printWinBattle(player.)
+        printWinBattle(player.getName(), "Goblin");
     }
     else{
         player.damage(goblin_damage);
+        printLossBattle(player.getName(), "Goblin");
     }
 }
 
 void Goblin::printInfo(std::ostream &out) const
 {
     printCardDetails(out, "Goblin");
-    printMonsterDetails(out, 6, 10, 2, false);
+    printMonsterDetails(out, goblin_force, goblin_damage, goblin_loot, false);
     printEndOfCardDetails(out);
 }
 
