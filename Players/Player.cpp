@@ -8,20 +8,10 @@
 #define BASE_HP 100
 #define BASE_ATTACK 5
 
-char* copyString(const char* originalString)
+
+Player::Player(const std::string name, int baseMaxHP, int baseForce)
 {
-    int size = strlen(originalString);
-    char* string = new char[size + 1];
-
-    strncpy(string, originalString, size);
-    string[size] = '\0';
-
-    return string;
-}
-
-Player::Player(const char* name, int baseMaxHP, int baseForce)
-{
-    this->m_name = copyString(name);
+    this->m_name = name;
     this->m_level = 1;
     this->m_force = baseForce > 0 ? baseForce : BASE_ATTACK;
     this->m_maxHP = baseMaxHP > 0 ? baseMaxHP : BASE_HP;
@@ -31,7 +21,7 @@ Player::Player(const char* name, int baseMaxHP, int baseForce)
 
 Player::Player(const Player& player)
 {
-    this->m_name = copyString(player.m_name);
+    this->m_name = player.m_name;
     this->m_level = player.m_level;
     this->m_force = player.m_force;
     this->m_maxHP = player.m_maxHP;
@@ -39,10 +29,6 @@ Player::Player(const Player& player)
     this->m_coins = player.m_coins;
 }
 
-Player::~Player()
-{
-    delete[] m_name;
-}
 
 Player& Player::operator=(const Player& player)
 {
@@ -50,8 +36,7 @@ Player& Player::operator=(const Player& player)
         return *this;
     }
 
-    delete[] this->m_name;
-    this->m_name = copyString(player.m_name);
+    this->m_name = player.m_name;
     this->m_level = player.m_level;
     this->m_force = player.m_force;
     this->m_maxHP = player.m_maxHP;
@@ -64,11 +49,6 @@ Player& Player::operator=(const Player& player)
 
 void Player::printInfo() const
 {
-    printPlayerInfo(this->m_name,
-                    this->m_level,
-                    this->m_force,
-                    this->m_HP,
-                    this->m_coins);
 }
 
 void Player::levelUp()
@@ -136,6 +116,11 @@ bool Player::pay(int coinAmount)
 int Player::getAttackStrength() const
 {
     return this->m_force + this->m_level;
+}
+
+std::string Player::getName()
+{
+    return this->m_name;
 }
 
 
