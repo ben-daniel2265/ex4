@@ -9,7 +9,7 @@ class Goblin : public Card {
     static int const goblin_damage = 10;
 
 public:
-    Goblin(std::string name);
+    Goblin();
 
     void applyEncounter(Player& player) const override;
     void printInfo(std::ostream &out) const override;

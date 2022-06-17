@@ -1,5 +1,5 @@
-#ifndef EX4_Goblin_H
-#define EX4_Goblin_H
+#ifndef EX4_Vampire_H
+#define EX4_Vampire_H
 
 #include "Card.h"
 
@@ -9,7 +9,7 @@ class Vampire : public Card {
     static int const vampire_loot = 2;
 
 public:
-    Vampire(std::string name);
+    Vampire();
 
     void applyEncounter(Player& player) const override;
     void printInfo(std::ostream &out) const override;
@@ -20,4 +20,4 @@ public:
 };
 
 
-#endif //EX4_Card_H
+#endif //EX4_Vampire_H

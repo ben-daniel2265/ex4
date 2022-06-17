@@ -61,6 +61,16 @@ int Player::getLevel() const
     return m_level;
 }
 
+int Player::getCoins() const
+{
+    return m_coins;
+}
+
+std::string Player::getJob() const
+{
+    return m_job;
+}
+
 void Player::buff(int buffAmount)
 {
     if(buffAmount > 0){
@@ -125,8 +135,6 @@ void Player::knockOut()
 {
     this->m_HP = 0;
 }
-
-
 
 std::ostream& operator<<(std::ostream &out, Player& player)
 {

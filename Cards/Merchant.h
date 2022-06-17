@@ -10,7 +10,7 @@ class Merchant : public Card {
     static int const force_boost_potion_add_amount = 1;
     
 public:
-    Merchant(std::string name);
+    Merchant();
 
     void applyEncounter(Player& player) const override;
     void printInfo(std::ostream &out) const override;

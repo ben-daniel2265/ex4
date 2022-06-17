@@ -4,7 +4,7 @@
 #include "Merchant.h"
 
 
-Merchant::Merchant(std::string name) : Card(name)
+Merchant::Merchant() : Card("Merchant")
 {}
 
 void Merchant::applyEncounter(Player& player) const

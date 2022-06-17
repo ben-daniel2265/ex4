@@ -1,5 +1,5 @@
-#ifndef EX4_Goblin_H
-#define EX4_Goblin_H
+#ifndef EX4_Dragon_H
+#define EX4_Dragon_H
 
 #include "Card.h"
 
@@ -8,7 +8,7 @@ class Dragon : public Card {
     static int const dragon_loot = 1000;
 
 public:
-    Dragon(std::string name);
+    Dragon();
 
     void applyEncounter(Player& player) const override;
     void printInfo(std::ostream &out) const override;
@@ -19,4 +19,4 @@ public:
 };
 
 
-#endif //EX4_Card_H
+#endif //EX4_Dragon_H

@@ -4,7 +4,7 @@
 #include "Vampire.h"
 
 
-Vampire::Vampire(std::string name) : Card(name)
+Vampire::Vampire() : Card("Vampire")
 {}
 
 void Vampire::applyEncounter(Player& player) const

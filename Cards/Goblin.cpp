@@ -4,7 +4,7 @@
 #include "Goblin.h"
 
 
-Goblin::Goblin(std::string name) : Card(name)
+Goblin::Goblin() : Card("Goblin")
 {}
 
 void Goblin::applyEncounter(Player& player) const

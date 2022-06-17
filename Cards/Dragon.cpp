@@ -4,7 +4,7 @@
 #include "Dragon.h"
 
 
-Dragon::Dragon(std::string name) : Card(name)
+Dragon::Dragon() : Card("Dragon")
 {}
 
 void Dragon::applyEncounter(Player& player) const

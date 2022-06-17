@@ -35,6 +35,7 @@ class Player{
     void levelUp();
     int getLevel() const;
     int getCoins() const;
+    std::string getJob() const;
     void buff(int buffAmount);
     void damage(int damageAmount);
     void knockOut();

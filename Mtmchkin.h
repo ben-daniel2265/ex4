@@ -1,7 +1,15 @@
 #ifndef MTMCHKIN_H_
 #define MTMCHKIN_H_
 
+#include "Cards\Card.h"
+#include "Players\Player.h"
+#include <queue>
+#include <memory>
+
 class Mtmchkin{
+
+    std::queue<std::unique_ptr<Player>> m_players;
+    std::queue<std::unique_ptr<Card>> m_deck;
 
 public:
     
