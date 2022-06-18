@@ -19,6 +19,17 @@
 #include <memory>
 #include "Exception.h"
 
+
+bool validName(std::string const &str) {
+    return str.find_first_not_of("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") ==
+        std::string::npos && str.length() <= 15;
+}
+
+bool isRealJob(std::string const &str) {
+    return str == "Wizard" || str == "Fighter" || str == "Rouge";
+}
+
+
 Mtmchkin::Mtmchkin(const std::string fileName)
 {
     std::ifstream file(fileName);
@@ -57,16 +68,61 @@ Mtmchkin::Mtmchkin(const std::string fileName)
         else{
             throw DeckFormatError(line_num);
         }
-
+        this->m_deck.front()->printInfo(std::cout);
     }
     if(line_num < 5){
         throw DeckFileInvalidSize();
+    }
+
+    printStartGameMessage();
+
+    int num_of_players = 0;
+    std::string name;
+    std::string job;
+    printEnterTeamSizeMessage();
+
+    std::cin >> num_of_players;
+
+    while(num_of_players < 2 || num_of_players > 6){
+        printInvalidTeamSize();
+        printEnterTeamSizeMessage();
+        std::cin >> num_of_players;    
+    }
+
+    printInsertPlayerMessage();
+    while(num_of_players > 0){
+        std::cin >> name;
+        std::cin >> job;
+
+        if(validName(name) && isRealJob(job)){
+            if(job == "Wizard"){
+                this->m_players.push(std::unique_ptr<Player>(new Wizard(name)));
+            }
+            else if(job == "Rouge"){
+                this->m_players.push(std::unique_ptr<Player>(new Rouge(name)));
+            }
+            else if(job == "Fighter"){
+                this->m_players.push(std::unique_ptr<Player>(new Fighter(name)));
+            }
+            num_of_players--;
+            if(num_of_players > 0){
+                printInsertPlayerMessage();
+            }
+        }
+        else if(!validName(name)){
+            printInvalidName();
+        }
+        else{
+            printInvalidClass();
+        }
+
     }
 }
     
 void Mtmchkin::playRound()
 {
-
+    printRoundStartMessage();
+    
 }
 
 void Mtmchkin::printLeaderBoard() const
@@ -76,12 +132,12 @@ void Mtmchkin::printLeaderBoard() const
 
 bool Mtmchkin::isGameOver() const
 {
-
+    return true;
 }
 
 int Mtmchkin::getNumberOfRounds() const
 {
-
+    return 1;
 }
 
 

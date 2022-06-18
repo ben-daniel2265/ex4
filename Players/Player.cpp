@@ -2,7 +2,7 @@
 #define HW4_PLAYER_source
 
 #include "Player.h"
-#include "utilities.h"
+#include "../utilities.h"
 
 #define BASE_HP 100
 #define BASE_ATTACK 5
@@ -30,7 +30,6 @@ Player::Player(const Player& player)
     this->m_job = player.m_job;
 }
 
-
 Player& Player::operator=(const Player& player)
 {
     if(this == &player){
@@ -47,7 +46,6 @@ Player& Player::operator=(const Player& player)
 
     return *this;
 }
-
 
 void Player::levelUp()
 {

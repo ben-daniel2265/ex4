@@ -196,7 +196,7 @@ void printLeaderBoardStartMessage()
 
 void printPlayerLeaderBoard(int ranking, const Player& player)
 {
-    cout << ranking << "          " << player << endl;
+//    cout << ranking << "          " << player << endl;
 }
 
 void printGameEndMessage()

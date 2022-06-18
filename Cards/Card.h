@@ -1,8 +1,8 @@
 #ifndef EX4_Card_H
 #define EX4_Card_H
 
-#include "Players/Player.h"
-#include "utilities.h"
+#include "../Players/Player.h"
+#include "../utilities.h"
 #include <ostream>
 
 class Card {

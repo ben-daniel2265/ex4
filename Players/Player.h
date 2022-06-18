@@ -25,10 +25,9 @@ class Player{
     */
     Player(const std::string name, std::string job, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
     Player(const Player& player);
-    ~Player();
+    ~Player() = default;
     Player& operator=(const Player& player);
 
-    virtual void printInfo(std::ostream &out) const;
     virtual void heal(int healAmount);
     virtual void addCoins(int coinAmount);
     virtual int getAttackStrength() const;

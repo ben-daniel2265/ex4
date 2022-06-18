@@ -4,7 +4,7 @@
 #include "Rouge.h"
 
 
-Rouge::Rouge(std::string name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK) : 
+Rouge::Rouge(std::string name, int baseMaxHP, int baseForce) : 
     Player(name, "Rogue", baseMaxHP, baseForce){}
 
 void Rouge::addCoins(int coinAmount)

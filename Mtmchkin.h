@@ -7,9 +7,9 @@
 #include <memory>
 
 class Mtmchkin{
-
     std::queue<std::unique_ptr<Player>> m_players;
     std::queue<std::unique_ptr<Card>> m_deck;
+    int m_player_num;
 
 public:
     
