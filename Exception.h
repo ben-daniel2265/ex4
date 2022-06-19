@@ -6,20 +6,20 @@
 class DeckFileNotFound
 {
     public:
-    std::string what(){
+    const char* what() const{
         return "Deck File Error: File not found";
     }
 };
 
 
-class DeckFormatError
+class DeckFileFormatError
 {
     int line;
 
     public:
-    DeckFormatError(int line) : line(line) {};
-    std::string what(){
-        return "Deck File Error: File format error in line " + std::to_string(line);
+    DeckFileFormatError(int line) : line(line) {};
+    const char* what() const{
+        return ("Deck File Error: File format error in line " + std::to_string(line)).c_str();
     }
 };
 
@@ -28,7 +28,7 @@ class DeckFormatError
 class DeckFileInvalidSize
 {
     public:
-    std::string what(){
+    const char* what() const{
         return "Deck File Error: Deck size is invalid";
     }
 };

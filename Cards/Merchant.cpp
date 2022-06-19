@@ -9,35 +9,29 @@ Merchant::Merchant() : Card("Merchant")
 
 void Merchant::applyEncounter(Player& player) const
 {
-    int choice = -1;
+    std::string choice;
     printMerchantInitialMessageForInteractiveEncounter(std::cout, player.getName(), player.getCoins());
 
-    try{
+    std::cin >> choice;
+
+    while(choice != "0" && choice != "1" && choice != "2"){
+        printInvalidInput();
         std::cin >> choice;
     }
-    catch(...){}
 
-    while(choice < 0 and 2 < choice){
-        printInvalidInput();
-        try{
-            std::cin >> choice;
-        }
-        catch(...){}
-    }
-
-    if(choice == 1){
+    if(choice == "1"){
         if(player.pay(hp_potion_cost)){
             player.heal(hp_potion_add_amount);
-            printMerchantSummary(std::cout, player.getName(), choice, hp_potion_cost);
+            printMerchantSummary(std::cout, player.getName(), 1, hp_potion_cost);
         }
         else{
             printMerchantInsufficientCoins(std::cout);
         }
     }
-    else if(choice == 2){
+    else if(choice == "2"){
         if(player.pay(force_boost_potion_cost)){
             player.buff(force_boost_potion_add_amount);
-            printMerchantSummary(std::cout, player.getName(), choice, force_boost_potion_cost);
+            printMerchantSummary(std::cout, player.getName(), 2, force_boost_potion_cost);
         }
         else{
             printMerchantInsufficientCoins(std::cout);

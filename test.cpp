@@ -1,4 +1,3 @@
-/*
 #include <functional>
 #include <string>
 #include <iostream>
@@ -86,7 +85,9 @@ bool GeneralGameSimulationTest(const string &tempDeckFilename, string input, str
     std::ofstream outfile(tempDeckFilename+"out.txt");
     std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
     std::cout.rdbuf(outfile.rdbuf());
+
     Mtmchkin game(tempDeckFilename+".txt");
+
     while(!game.isGameOver() && game.getNumberOfRounds() < 100){
         game.playRound();
         game.printLeaderBoard();
@@ -114,7 +115,7 @@ void run_test(std::function<bool()> test, std::string test_name)
 
 
 /* ---------------------------------------------------------------------------------------------- 
-// --------------------------------       Tests for Card class          ------------------------------
+// --------------------------------       Tests for Card class          ------------------------------*/
 
 bool cardsPrintsTest()
 {
@@ -153,7 +154,7 @@ bool testCard()
 }
 
 /* ---------------------------------------------------------------------------------------------- *
-// --------------------------------       Tests for Mtmchkin class          ------------------------------
+// --------------------------------       Tests for Mtmchkin class          ------------------------------*/
 
 bool gameRunTest()
 {
@@ -249,7 +250,7 @@ bool merchantInputTest()
 }
 
 /* ---------------------------------------------------------------------------------------------- *
-// --------------------------------       Tests for Exceptions          ------------------------------
+// --------------------------------       Tests for Exceptions          ------------------------------*/
 
 bool badSizeTest()
 {
@@ -321,7 +322,7 @@ bool badFormatStartTest()
 }
 
 /* ---------------------------------------------------------------------------------------------- *
-// --------------------------------       Main function          ------------------------------
+// --------------------------------       Main function          ------------------------------*/
 
 int main(){
     

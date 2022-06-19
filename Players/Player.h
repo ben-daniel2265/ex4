@@ -44,7 +44,7 @@ class Player{
 
     std::string getName();
 
-    friend std::ostream& operator<<(std::ostream &out, Player& player);
+    friend std::ostream& operator<<(std::ostream &out, const Player& player);
 };
 
 #endif // HW4_PLAYER

@@ -12,7 +12,7 @@
 #include "Cards\Fairy.h"
 #include "Cards\Treasure.h"
 #include "Players\player.h"
-#include "Players\Rouge.h"
+#include "Players\Rogue.h"
 #include "Players\Wizard.h"
 #include "Players\Fighter.h"
 #include <fstream>
@@ -26,11 +26,28 @@ bool validName(std::string const &str) {
 }
 
 bool isRealJob(std::string const &str) {
-    return str == "Wizard" || str == "Fighter" || str == "Rouge";
+    return str == "Wizard" || str == "Fighter" || str == "Rogue";
 }
 
+bool isOut(Player &player){
+    return player.isKnockedOut() || player.getLevel() == 10;
+}
 
-Mtmchkin::Mtmchkin(const std::string fileName)
+void addWinner(std::vector<std::unique_ptr<Player>> players, int place){
+    while(place != 0 && players.at(place - 1)->getLevel() != 10){
+        std::swap(players[place], players[place - 1]);
+        place--;
+    }
+}
+
+void addLoser(std::vector<std::unique_ptr<Player>> players, int place){
+    while(place < players.size() - 1 && !players.at(place + 1)->isKnockedOut()){
+        std::swap(players[place], players[place - 1]);
+        place++;
+    }
+}
+
+Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
 {
     std::ifstream file(fileName);
     if(!file){
@@ -66,9 +83,8 @@ Mtmchkin::Mtmchkin(const std::string fileName)
             this->m_deck.push(std::unique_ptr<Card>(new Fairy()));
         }
         else{
-            throw DeckFormatError(line_num);
+            throw DeckFileFormatError(line_num);
         }
-        this->m_deck.front()->printInfo(std::cout);
     }
     if(line_num < 5){
         throw DeckFileInvalidSize();
@@ -89,6 +105,8 @@ Mtmchkin::Mtmchkin(const std::string fileName)
         std::cin >> num_of_players;    
     }
 
+    this->m_player_num = num_of_players;
+
     printInsertPlayerMessage();
     while(num_of_players > 0){
         std::cin >> name;
@@ -96,13 +114,13 @@ Mtmchkin::Mtmchkin(const std::string fileName)
 
         if(validName(name) && isRealJob(job)){
             if(job == "Wizard"){
-                this->m_players.push(std::unique_ptr<Player>(new Wizard(name)));
+                this->m_players.push_back(std::unique_ptr<Player>(new Wizard(name)));
             }
-            else if(job == "Rouge"){
-                this->m_players.push(std::unique_ptr<Player>(new Rouge(name)));
+            else if(job == "Rogue"){
+                this->m_players.push_back(std::unique_ptr<Player>(new Rogue(name)));
             }
             else if(job == "Fighter"){
-                this->m_players.push(std::unique_ptr<Player>(new Fighter(name)));
+                this->m_players.push_back(std::unique_ptr<Player>(new Fighter(name)));
             }
             num_of_players--;
             if(num_of_players > 0){
@@ -121,23 +139,66 @@ Mtmchkin::Mtmchkin(const std::string fileName)
     
 void Mtmchkin::playRound()
 {
-    printRoundStartMessage();
-    
+    this->m_round++;
+    printRoundStartMessage(this->m_round);
+    std::unique_ptr<Card> current_card;
+
+    for(int i = 0; i < m_player_num; i++){
+        current_card = move(this->m_deck.front());
+
+        printTurnStartMessage(this->m_players.at(i)->getName());
+
+        if(!isOut(*(this->m_players.at(i).get()))){
+            current_card->applyEncounter(*(this->m_players.at(i).get()));
+            if(isOut(*(this->m_players.at(i).get()))){
+                this->m_out_players++;
+            } 
+        }
+
+        this->m_deck.pop();
+        this->m_deck.push(move(current_card));
+    }
+
+    if(isGameOver()){
+        printGameEndMessage();
+    }
+
+
+    for(int i = 0; i < m_player_num; i++){
+        if(this->m_players.at(i).get()->getLevel() == 10){
+            int place = i;
+            while(place >= 1 && m_players.at(place - 1)->getLevel() != 10){
+                std::swap(m_players[place], m_players[place - 1]);
+                place--;
+            }                    //addWinner(this->m_players, i);
+        }
+        else if (this->m_players.at(i).get()->isKnockedOut()) {
+            int place = i;
+            while(place < m_players.size() - 1 && !m_players.at(place + 1)->isKnockedOut()){
+                std::swap(m_players[place], m_players[place + 1]);
+                place++;
+            }
+                        //addLoser(this->m_players, i);
+        }
+    }
 }
 
 void Mtmchkin::printLeaderBoard() const
 {
-
+    printLeaderBoardStartMessage();
+    for(int i = 0; i < this->m_player_num; i++){
+        printPlayerLeaderBoard(i+1, *(this->m_players.at(i).get()));
+    }
 }
 
 bool Mtmchkin::isGameOver() const
 {
-    return true;
+    return this->m_out_players == this->m_player_num;
 }
 
 int Mtmchkin::getNumberOfRounds() const
 {
-    return 1;
+    return m_round;
 }
 
 

@@ -1,0 +1,317 @@
+Welcome to the world of MtmChkin!!!
+Please enter team size: (2-6)
+Please insert the player name and class: 
+Please insert the player name and class: 
+
+-------------------------------------------
+Start of round 1:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+This is but a flesh wound. You've lost 10 health points
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     100   30    Wizard  
+2          Pikachu         1         5     90    10    Rogue  
+
+-------------------------------------------
+Start of round 2:
+
+Start of Itay's turn: 
+You fell into the trap, lose 10 health points.
+Start of Pikachu's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     90    30    Wizard  
+2          Pikachu         1         5     90    30    Rogue  
+
+-------------------------------------------
+Start of round 3:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     90    50    Wizard  
+2          Pikachu         1         5     90    30    Rogue  
+
+-------------------------------------------
+Start of round 4:
+
+Start of Itay's turn: 
+This is but a flesh wound. You've lost 10 health points
+Start of Pikachu's turn: 
+You fell into the trap, lose 10 health points.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     80    50    Wizard  
+2          Pikachu         1         5     80    30    Rogue  
+
+-------------------------------------------
+Start of round 5:
+
+Start of Itay's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     80    60    Wizard  
+2          Pikachu         1         5     80    30    Rogue  
+
+-------------------------------------------
+Start of round 6:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+This is but a flesh wound. You've lost 10 health points
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     80    80    Wizard  
+2          Pikachu         1         5     70    30    Rogue  
+
+-------------------------------------------
+Start of round 7:
+
+Start of Itay's turn: 
+You fell into the trap, lose 10 health points.
+Start of Pikachu's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     70    80    Wizard  
+2          Pikachu         1         5     70    50    Rogue  
+
+-------------------------------------------
+Start of round 8:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     70    100   Wizard  
+2          Pikachu         1         5     70    50    Rogue  
+
+-------------------------------------------
+Start of round 9:
+
+Start of Itay's turn: 
+This is but a flesh wound. You've lost 10 health points
+Start of Pikachu's turn: 
+You fell into the trap, lose 10 health points.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     60    100   Wizard  
+2          Pikachu         1         5     60    50    Rogue  
+
+-------------------------------------------
+Start of round 10:
+
+Start of Itay's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     60    110   Wizard  
+2          Pikachu         1         5     60    50    Rogue  
+
+-------------------------------------------
+Start of round 11:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+This is but a flesh wound. You've lost 10 health points
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     60    130   Wizard  
+2          Pikachu         1         5     50    50    Rogue  
+
+-------------------------------------------
+Start of round 12:
+
+Start of Itay's turn: 
+You fell into the trap, lose 10 health points.
+Start of Pikachu's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     50    130   Wizard  
+2          Pikachu         1         5     50    70    Rogue  
+
+-------------------------------------------
+Start of round 13:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     50    150   Wizard  
+2          Pikachu         1         5     50    70    Rogue  
+
+-------------------------------------------
+Start of round 14:
+
+Start of Itay's turn: 
+This is but a flesh wound. You've lost 10 health points
+Start of Pikachu's turn: 
+You fell into the trap, lose 10 health points.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     40    150   Wizard  
+2          Pikachu         1         5     40    70    Rogue  
+
+-------------------------------------------
+Start of round 15:
+
+Start of Itay's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     40    160   Wizard  
+2          Pikachu         1         5     40    70    Rogue  
+
+-------------------------------------------
+Start of round 16:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+This is but a flesh wound. You've lost 10 health points
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     40    180   Wizard  
+2          Pikachu         1         5     30    70    Rogue  
+
+-------------------------------------------
+Start of round 17:
+
+Start of Itay's turn: 
+You fell into the trap, lose 10 health points.
+Start of Pikachu's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     30    180   Wizard  
+2          Pikachu         1         5     30    90    Rogue  
+
+-------------------------------------------
+Start of round 18:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     30    200   Wizard  
+2          Pikachu         1         5     30    90    Rogue  
+
+-------------------------------------------
+Start of round 19:
+
+Start of Itay's turn: 
+This is but a flesh wound. You've lost 10 health points
+Start of Pikachu's turn: 
+You fell into the trap, lose 10 health points.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     20    200   Wizard  
+2          Pikachu         1         5     20    90    Rogue  
+
+-------------------------------------------
+Start of round 20:
+
+Start of Itay's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     20    210   Wizard  
+2          Pikachu         1         5     20    90    Rogue  
+
+-------------------------------------------
+Start of round 21:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+This is but a flesh wound. You've lost 10 health points
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     20    230   Wizard  
+2          Pikachu         1         5     10    90    Rogue  
+
+-------------------------------------------
+Start of round 22:
+
+Start of Itay's turn: 
+You fell into the trap, lose 10 health points.
+Start of Pikachu's turn: 
+You've stumbled into a pile of coins! you've gained 10 gold.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     10    230   Wizard  
+2          Pikachu         1         5     10    110   Rogue  
+
+-------------------------------------------
+Start of round 23:
+
+Start of Itay's turn: 
+Fairies like wizards, you've gained 10 health points.
+Start of Pikachu's turn: 
+Nothing happened.
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     10    250   Wizard  
+2          Pikachu         1         5     10    110   Rogue  
+
+-------------------------------------------
+Start of round 24:
+
+Start of Itay's turn: 
+This is but a flesh wound. You've lost 10 health points
+Start of Pikachu's turn: 
+You fell into the trap, lose 10 health points.
+The Game has ended!!!
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          Itay            1         5     0     250   Wizard  
+2          Pikachu         1         5     0     110   Rogue  

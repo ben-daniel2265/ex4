@@ -15,7 +15,7 @@ Player::Player(const std::string name, std::string job, int baseMaxHP, int baseF
     this->m_force = baseForce > 0 ? baseForce : BASE_ATTACK;
     this->m_maxHP = baseMaxHP > 0 ? baseMaxHP : BASE_HP;
     this->m_HP = baseMaxHP;
-    this->m_coins = 0;
+    this->m_coins = 10;
     this->m_job = job;
 }
 
@@ -134,7 +134,7 @@ void Player::knockOut()
     this->m_HP = 0;
 }
 
-std::ostream& operator<<(std::ostream &out, Player& player)
+std::ostream& operator<<(std::ostream &out, const Player& player)
 {
     printPlayerDetails(out, player.m_name, player.m_job, player.m_level, player.m_force, player.m_HP, player.m_coins);
     return out;

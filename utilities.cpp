@@ -1,6 +1,5 @@
-//
-// Created by itke on 4/20/2022.
-//
+#ifndef UTIL_CPP
+#define UTIL_CPP
 
 #include "utilities.h"
 
@@ -196,7 +195,7 @@ void printLeaderBoardStartMessage()
 
 void printPlayerLeaderBoard(int ranking, const Player& player)
 {
-//    cout << ranking << "          " << player << endl;
+    cout << ranking << "          " << player << endl;
 }
 
 void printGameEndMessage()
@@ -205,3 +204,4 @@ void printGameEndMessage()
 }
 
 
+#endif // UTIL_CPP

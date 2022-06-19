@@ -1,5 +1,5 @@
-#ifndef EX4_Pitfall_Source
-#define EX4_Pitfall_Source
+#ifndef EX4_Barfight_Source
+#define EX4_Barfight_Source
 
 #include "Barfight.h"
 
