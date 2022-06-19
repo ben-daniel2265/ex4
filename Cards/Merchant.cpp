@@ -12,11 +12,11 @@ void Merchant::applyEncounter(Player& player) const
     std::string choice;
     printMerchantInitialMessageForInteractiveEncounter(std::cout, player.getName(), player.getCoins());
 
-    std::cin >> choice;
+    std::getline(std::cin, choice);
 
     while(choice != "0" && choice != "1" && choice != "2"){
         printInvalidInput();
-        std::cin >> choice;
+        std::getline(std::cin, choice);
     }
 
     if(choice == "1"){
@@ -36,6 +36,9 @@ void Merchant::applyEncounter(Player& player) const
         else{
             printMerchantInsufficientCoins(std::cout);
         }
+    }
+    else{
+        printMerchantSummary(std::cout, player.getName(), 0, 0);
     }
 }
 

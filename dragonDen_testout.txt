@@ -14,5 +14,5 @@ The Game has ended!!!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          Jimmy           1         5     0     10    Wizard  
-2          Pikachu         1         5     0     10    Fighter  
+1          Pikachu         1         5     0     10    Fighter  
+2          Jimmy           1         5     0     10    Wizard  

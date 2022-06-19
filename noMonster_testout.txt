@@ -313,5 +313,5 @@ The Game has ended!!!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          Itay            1         5     0     250   Wizard  
-2          Pikachu         1         5     0     110   Rogue  
+1          Pikachu         1         5     0     110   Rogue  
+2          Itay            1         5     0     250   Wizard  

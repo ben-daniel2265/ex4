@@ -76,6 +76,13 @@ void Player::buff(int buffAmount)
     }
 }
 
+void Player::debuff(int debuffAmount)
+{
+    if(debuffAmount > 0 && this->m_force > 0){
+        this->m_force -= debuffAmount;
+    }
+}
+
 void Player::heal(int healAmount)
 {
     if(healAmount > 0){

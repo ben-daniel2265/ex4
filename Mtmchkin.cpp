@@ -144,42 +144,41 @@ void Mtmchkin::playRound()
     std::unique_ptr<Card> current_card;
 
     for(int i = 0; i < m_player_num; i++){
-        current_card = move(this->m_deck.front());
-
-        printTurnStartMessage(this->m_players.at(i)->getName());
-
         if(!isOut(*(this->m_players.at(i).get()))){
+            current_card = move(this->m_deck.front());
+
+            printTurnStartMessage(this->m_players.at(i)->getName());
             current_card->applyEncounter(*(this->m_players.at(i).get()));
             if(isOut(*(this->m_players.at(i).get()))){
                 this->m_out_players++;
+
+                if(this->m_players.at(i).get()->getLevel() == 10){
+                    int place = i;
+                    while(place >= 1 && m_players.at(place - 1)->getLevel() != 10){
+                        std::swap(m_players[place], m_players[place - 1]);
+                        place--;
+                    }                    //addWinner(this->m_players, i);
+                }
+                else if (this->m_players.at(i).get()->isKnockedOut()) {
+                    int place = i;
+                    if(place < m_players.size() - 1 && !m_players.at(place + 1)->isKnockedOut()){
+                        i--;
+                    }
+                    while(place < m_players.size() - 1 && !m_players.at(place + 1)->isKnockedOut()){
+                        std::swap(m_players[place], m_players[place + 1]);
+                        place++;
+                    }
+                                //addLoser(this->m_players, i);
+                }
             } 
+            this->m_deck.pop();
+            this->m_deck.push(move(current_card));
         }
 
-        this->m_deck.pop();
-        this->m_deck.push(move(current_card));
     }
 
     if(isGameOver()){
         printGameEndMessage();
-    }
-
-
-    for(int i = 0; i < m_player_num; i++){
-        if(this->m_players.at(i).get()->getLevel() == 10){
-            int place = i;
-            while(place >= 1 && m_players.at(place - 1)->getLevel() != 10){
-                std::swap(m_players[place], m_players[place - 1]);
-                place--;
-            }                    //addWinner(this->m_players, i);
-        }
-        else if (this->m_players.at(i).get()->isKnockedOut()) {
-            int place = i;
-            while(place < m_players.size() - 1 && !m_players.at(place + 1)->isKnockedOut()){
-                std::swap(m_players[place], m_players[place + 1]);
-                place++;
-            }
-                        //addLoser(this->m_players, i);
-        }
     }
 }
 

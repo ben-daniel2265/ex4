@@ -36,6 +36,7 @@ class Player{
     int getCoins() const;
     std::string getJob() const;
     void buff(int buffAmount);
+    void debuff(int debuffAmount);
     void damage(int damageAmount);
     void knockOut();
     bool isKnockedOut() const;

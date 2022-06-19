@@ -48,7 +48,7 @@ Ranking    Player Name     Level     Force HP    Coins Job
 Start of round 4:
 
 Start of rocky's turn: 
-Player rocky has defeated Vampire and rose 1 Level!
+Player rocky has defeated Goblin and rose 1 Level!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -59,32 +59,10 @@ Ranking    Player Name     Level     Force HP    Coins Job
 Start of round 5:
 
 Start of rocky's turn: 
-Player rocky has defeated Goblin and rose 1 Level!
-
-The current ranking of the Team:
-Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           6         5     100   20    Fighter  
-2          matamDalf       3         5     0     14    Wizard  
-
--------------------------------------------
-Start of round 6:
-
-Start of rocky's turn: 
-Player rocky has defeated Goblin and rose 1 Level!
-
-The current ranking of the Team:
-Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           7         5     100   22    Fighter  
-2          matamDalf       3         5     0     14    Wizard  
-
--------------------------------------------
-Start of round 7:
-
-Start of rocky's turn: 
 Player rocky has been defeated by a Dragon.
 The Game has ended!!!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           7         5     0     22    Fighter  
+1          rocky           5         5     0     18    Fighter  
 2          matamDalf       3         5     0     14    Wizard  

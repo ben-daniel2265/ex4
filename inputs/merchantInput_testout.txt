@@ -29,7 +29,7 @@ Force boost (adds 1 force): 10 coins per boost.
 Enter 1 for Health Potion, 2 for force boost or 0 to leave.
 matamDalf has 12 coins
 You have entered an invalid input. Please try again.
-matamDalf has paid 5 coins for 1 health potion!
+getmatamDalf has paid 5 coins for 1 health potion!
 Safe travels!
 Start of rocky's turn: 
 You've ran into a Merchant!
@@ -64,6 +64,7 @@ Start of round 4:
 
 Start of rocky's turn: 
 Player rocky has defeated Goblin and rose 1 Level!
+Start of matamDalf's turn: 
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -80,8 +81,7 @@ Health Potion (heals 1 health point) : 5 coins per potion.
 Force boost (adds 1 force): 10 coins per boost.
 Enter 1 for Health Potion, 2 for force boost or 0 to leave.
 rocky has 11 coins
-rocky has paid 0 coins 
-Safe travels!
+Start of matamDalf's turn: 
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
@@ -92,28 +92,42 @@ Ranking    Player Name     Level     Force HP    Coins Job
 Start of round 6:
 
 Start of rocky's turn: 
-You've ran into a Merchant!
-Browse his wares:
-Health Potion (heals 1 health point) : 5 coins per potion.
-Force boost (adds 1 force): 10 coins per boost.
-Enter 1 for Health Potion, 2 for force boost or 0 to leave.
-rocky has 11 coins
-rocky has paid 10 coins for 1 force boost!
-Safe travels!
+Player rocky has defeated Goblin and rose 1 Level!
+Start of matamDalf's turn: 
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           4         6     100   1     Fighter  
+1          rocky           5         5     100   13    Fighter  
 2          matamDalf       2         5     0     9     Wizard  
 
 -------------------------------------------
 Start of round 7:
 
 Start of rocky's turn: 
+You've ran into a Merchant!
+Browse his wares:
+Health Potion (heals 1 health point) : 5 coins per potion.
+Force boost (adds 1 force): 10 coins per boost.
+Enter 1 for Health Potion, 2 for force boost or 0 to leave.
+rocky has 13 coins
+rocky has paid 10 coins for 1 force boost!
+Safe travels!
+Start of matamDalf's turn: 
+
+The current ranking of the Team:
+Ranking    Player Name     Level     Force HP    Coins Job
+1          rocky           5         6     100   3     Fighter  
+2          matamDalf       2         5     0     9     Wizard  
+
+-------------------------------------------
+Start of round 8:
+
+Start of rocky's turn: 
 Player rocky has been defeated by a Dragon.
+Start of matamDalf's turn: 
 The Game has ended!!!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           4         6     0     1     Fighter  
+1          rocky           5         6     0     3     Fighter  
 2          matamDalf       2         5     0     9     Wizard  
