@@ -1,20 +1,25 @@
 #ifndef MTMCHKIN_Source
-#define MTMCHKIN_Source
+#define MTMCHKIN_Source 
+
+static int const maxLevel =  10;
+static int const maxStringLength = 15;
+static int const maxTeamSize = 6;
+static int const minTeamSize = 2;
 
 #include "Mtmchkin.h"
-#include "Cards\Card.h"
-#include "Cards\Dragon.h"
-#include "Cards\Goblin.h"
-#include "Cards\Vampire.h"
-#include "Cards\Merchant.h"
-#include "Cards\Pitfall.h"
-#include "Cards\Barfight.h"
-#include "Cards\Fairy.h"
-#include "Cards\Treasure.h"
-#include "Players\player.h"
-#include "Players\Rogue.h"
-#include "Players\Wizard.h"
-#include "Players\Fighter.h"
+#include "Cards/Card.h"
+#include "Cards/Dragon.h"
+#include "Cards/Goblin.h"
+#include "Cards/Vampire.h"
+#include "Cards/Merchant.h"
+#include "Cards/Pitfall.h"
+#include "Cards/Barfight.h"
+#include "Cards/Fairy.h"
+#include "Cards/Treasure.h"
+#include "Players/player.h"
+#include "Players/Rogue.h"
+#include "Players/Wizard.h"
+#include "Players/Fighter.h"
 #include <fstream>
 #include <memory>
 #include "Exception.h"
@@ -22,7 +27,7 @@
 
 bool validName(std::string const &str) {
     return str.find_first_not_of("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") ==
-        std::string::npos && str.length() <= 15;
+        std::string::npos && str.length() <= maxStringLength;
 }
 
 bool isRealJob(std::string const &str) {
@@ -30,11 +35,11 @@ bool isRealJob(std::string const &str) {
 }
 
 bool isOut(Player &player){
-    return player.isKnockedOut() || player.getLevel() == 10;
+    return player.isKnockedOut() || player.getLevel() == maxLevel;
 }
 
 void addWinner(std::vector<std::unique_ptr<Player>> players, int place){
-    while(place != 0 && players.at(place - 1)->getLevel() != 10){
+    while(place != 0 && players.at(place - 1)->getLevel() != maxLevel){
         std::swap(players[place], players[place - 1]);
         place--;
     }
@@ -104,7 +109,7 @@ Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
     getline(std::cin, numInput);
     num_of_players = std::stoi(numInput);
 
-    while(num_of_players < 2 || num_of_players > 6){
+    while(num_of_players < minTeamSize || num_of_players > maxTeamSize){
         printInvalidTeamSize();
         printEnterTeamSizeMessage();
         getline(std::cin, numInput);
@@ -157,9 +162,9 @@ void Mtmchkin::playRound()
             if(isOut(*(this->m_players.at(i).get()))){
                 this->m_out_players++;
 
-                if(this->m_players.at(i).get()->getLevel() == 10){
+                if(this->m_players.at(i).get()->getLevel() == maxLevel){
                     int place = i;
-                    while(place >= 1 && m_players.at(place - 1)->getLevel() != 10){
+                    while(place >= 1 && m_players.at(place - 1)->getLevel() != maxLevel){
                         std::swap(m_players[place], m_players[place - 1]);
                         place--;
                     }                    //addWinner(this->m_players, i);

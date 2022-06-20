@@ -16,12 +16,14 @@ add_executable(ex4
         Players/Fighter.h
         Players/Player.cpp
         Players/Player.h
-        Players/Rouge.cpp
-        Players/Rouge.h
+        Players/Rogue.cpp
+        Players/Rogue.h
         Players/Wizard.cpp
         Players/Wizard.h
         Exception.h
         Mtmchkin.h
+        Mtmchkin.cpp
         test.cpp
         utilities.cpp
-        utilities.h)
+        utilities.h
+        main.cpp)

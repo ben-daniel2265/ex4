@@ -3,11 +3,12 @@
 
 #include "Card.h"
 
+static int const hpPotionCost = 5;
+static int const forceBoostPotionCost = 10;
+static int const hpPotionAddAmount = 1;
+static int const forceBoostPotionAddAmount = 1;
+
 class Merchant : public Card {
-    static int const hpPotionCost = 5;
-    static int const forceBoostPotionCost = 10;
-    static int const hpPotionAddAmount = 1;
-    static int const forceBoostPotionAddAmount = 1;
     
 public:
     Merchant();

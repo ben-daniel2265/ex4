@@ -3,8 +3,10 @@
 
 #include "Card.h"
 
+static int const healAmount = 10;
+
 class Fairy : public Card {
-    static int const healAmount = 10;
+
 
 public:
     Fairy();

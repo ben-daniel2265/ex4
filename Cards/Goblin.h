@@ -3,10 +3,11 @@
 
 #include "Card.h"
 
+static int const goblinForce = 6;
+static int const goblinLoot = 2;
+static int const goblinDamage = 10;
+
 class Goblin : public Card {
-    static int const goblinForce = 6;
-    static int const goblinLoot = 2;
-    static int const goblinDamage = 10;
 
 public:
     Goblin();

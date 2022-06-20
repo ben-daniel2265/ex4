@@ -3,8 +3,9 @@
 
 #include "Card.h"
 
+static int const damageAmount = 10;
+
 class Pitfall : public Card {
-    static int const damageAmount = 10;
 
 public:
     Pitfall();
