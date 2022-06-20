@@ -1,8 +1,8 @@
 #ifndef MTMCHKIN_H_
 #define MTMCHKIN_H_
 
-#include "Cards\Card.h"
-#include "Players\Player.h"
+#include "Cards/Card.h"
+#include "Players/Player.h"
 #include <queue>
 #include <memory>
 

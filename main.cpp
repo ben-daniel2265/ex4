@@ -1,7 +1,7 @@
 #ifndef MAIN_CPP
 #define MAIN_CPP
 
-#include "Mtmchkin.h"
+#include "../Mtmchkin.h"
 
 int main(){
     const int MAX_NUMBER_OF_ROUNDS = 100;

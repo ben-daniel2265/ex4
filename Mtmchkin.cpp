@@ -2,19 +2,17 @@
 #define MTMCHKIN_Source
 
 #include "Mtmchkin.h"
-#include "Cards\Card.h"
-#include "Cards\Dragon.h"
-#include "Cards\Goblin.h"
-#include "Cards\Vampire.h"
-#include "Cards\Merchant.h"
-#include "Cards\Pitfall.h"
-#include "Cards\Barfight.h"
-#include "Cards\Fairy.h"
-#include "Cards\Treasure.h"
-#include "Players\player.h"
-#include "Players\Rogue.h"
-#include "Players\Wizard.h"
-#include "Players\Fighter.h"
+#include "Cards/Dragon.h"
+#include "Cards/Goblin.h"
+#include "Cards/Vampire.h"
+#include "Cards/Merchant.h"
+#include "Cards/Pitfall.h"
+#include "Cards/Barfight.h"
+#include "Cards/Fairy.h"
+#include "Cards/Treasure.h"
+#include "Players/Rogue.h"
+#include "Players/Wizard.h"
+#include "Players/Fighter.h"
 #include <fstream>
 #include <memory>
 #include "Exception.h"
@@ -33,17 +31,60 @@ bool isOut(Player &player){
     return player.isKnockedOut() || player.getLevel() == 10;
 }
 
-void addWinner(std::vector<std::unique_ptr<Player>> players, int place){
-    while(place != 0 && players.at(place - 1)->getLevel() != 10){
-        std::swap(players[place], players[place - 1]);
-        place--;
+
+Card* getTypeCard(const char *card, int lineNum){
+    if(!strcmp(card, "Dragon")){
+        return new Dragon();
+    }
+    else if(!strcmp(card, "Goblin")){
+        return new Goblin();
+    }
+    else if(!strcmp(card, "Vampire")){
+        return new Vampire();
+    }
+    else if(!strcmp(card, "Merchant")){
+        return new Merchant();
+    }
+    else if(!strcmp(card, "Treasure")){
+        return new Treasure();
+    }
+    else if(!strcmp(card, "Pitfall")){
+        return new Pitfall();
+    }
+    else if(!strcmp(card, "Barfight")){
+       return new Barfight();
+    }
+    else if(!strcmp(card, "Fairy")){
+        return new Fairy();
+    }
+    else{
+        throw DeckFileFormatError(lineNum);
     }
 }
 
-void addLoser(std::vector<std::unique_ptr<Player>> players, int place){
-    while(place < players.size() - 1 && !players.at(place + 1)->isKnockedOut()){
-        std::swap(players[place], players[place - 1]);
-        place++;
+Player* getTypePlayer(std::string playerName, std::string playerClass){
+    if(playerClass == "Wizard"){
+        return new Wizard(playerName);
+    }
+    else if(playerClass == "Rogue"){
+        return new Rogue(playerName);
+    }
+    else{
+        return new Fighter(playerName);
+    }
+}
+
+
+void getNumOfPlayers(int &numOfPlayers){
+    std::string numInput;
+    getline(std::cin, numInput);
+    numOfPlayers = std::stoi(numInput);
+
+    while(numOfPlayers < 2 || numOfPlayers > 6){
+        printInvalidTeamSize();
+        printEnterTeamSizeMessage();
+        getline(std::cin, numInput);
+        numOfPlayers = std::stoi(numInput);  
     }
 }
 
@@ -57,34 +98,7 @@ Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
     char line[256];
     int line_num = 0;
     while(file.getline(line, sizeof(line))){
-        line_num++;
-        if(!strcmp(line, "Dragon")){
-            this->m_deck.push(std::unique_ptr<Card>(new Dragon()));
-        }
-        else if(!strcmp(line, "Goblin")){
-            this->m_deck.push(std::unique_ptr<Card>(new Goblin()));
-        }
-        else if(!strcmp(line, "Vampire")){
-            this->m_deck.push(std::unique_ptr<Card>(new Vampire()));
-        }
-        else if(!strcmp(line, "Merchant")){
-            this->m_deck.push(std::unique_ptr<Card>(new Merchant()));
-        }
-        else if(!strcmp(line, "Treasure")){
-            this->m_deck.push(std::unique_ptr<Card>(new Treasure()));
-        }
-        else if(!strcmp(line, "Pitfall")){
-            this->m_deck.push(std::unique_ptr<Card>(new Pitfall()));
-        }
-        else if(!strcmp(line, "Barfight")){
-            this->m_deck.push(std::unique_ptr<Card>(new Barfight()));
-        }
-        else if(!strcmp(line, "Fairy")){
-            this->m_deck.push(std::unique_ptr<Card>(new Fairy()));
-        }
-        else{
-            throw DeckFileFormatError(line_num);
-        }
+        this->m_deck.push(std::unique_ptr<Card>(getTypeCard(line, ++line_num)));
     }
     if(line_num < 5){
         throw DeckFileInvalidSize();
@@ -92,53 +106,37 @@ Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
 
     printStartGameMessage();
 
-
-    int num_of_players = 0;
-    std::string numInput;
+    int numOfPlayers = 0;
     std::string nameAndJob;
     std::string name;
     std::string job;
 
     printEnterTeamSizeMessage();
 
-    getline(std::cin, numInput);
-    num_of_players = std::stoi(numInput);
+    getNumOfPlayers(numOfPlayers);
 
-    while(num_of_players < 2 || num_of_players > 6){
-        printInvalidTeamSize();
-        printEnterTeamSizeMessage();
-        getline(std::cin, numInput);
-        num_of_players = std::stoi(numInput);  
-    }
-
-    this->m_player_num = num_of_players;
+    this->m_player_num = numOfPlayers;
 
     printInsertPlayerMessage();
-    while(num_of_players > 0 && getline(std::cin, nameAndJob)){
+
+    while(numOfPlayers > 0 && getline(std::cin, nameAndJob)){
         name = nameAndJob.substr(0, nameAndJob.find(" "));
         job = nameAndJob.substr(nameAndJob.find(" ") + 1);;
+
         if(validName(name) && isRealJob(job)){
-            if(job == "Wizard"){
-                this->m_players.push_back(std::unique_ptr<Player>(new Wizard(name)));
-            }
-            else if(job == "Rogue"){
-                this->m_players.push_back(std::unique_ptr<Player>(new Rogue(name)));
-            }
-            else if(job == "Fighter"){
-                this->m_players.push_back(std::unique_ptr<Player>(new Fighter(name)));
-            }
-            num_of_players--;
-            if(num_of_players > 0){
+            this->m_players.push_back(std::unique_ptr<Player>(getTypePlayer(name, job)));
+            numOfPlayers--;
+            if(numOfPlayers > 0){
                 printInsertPlayerMessage();
             }
         }
+
         else if(!validName(name)){
             printInvalidName();
         }
         else{
             printInvalidClass();
         }
-
     }
 }
     
@@ -166,10 +164,10 @@ void Mtmchkin::playRound()
                 }
                 else if (this->m_players.at(i).get()->isKnockedOut()) {
                     int place = i;
-                    if(place < m_players.size() - 1 && !m_players.at(place + 1)->isKnockedOut()){
+                    if(place < (int)(m_players.size() - 1) && !m_players.at(place + 1)->isKnockedOut()){
                         i--;
                     }
-                    while(place < m_players.size() - 1 && !m_players.at(place + 1)->isKnockedOut()){
+                    while(place < (int)(m_players.size() - 1) && !m_players.at(place + 1)->isKnockedOut()){
                         std::swap(m_players[place], m_players[place + 1]);
                         place++;
                     }
@@ -179,9 +177,7 @@ void Mtmchkin::playRound()
             this->m_deck.pop();
             this->m_deck.push(move(current_card));
         }
-
     }
-
     if(isGameOver()){
         printGameEndMessage();
     }
