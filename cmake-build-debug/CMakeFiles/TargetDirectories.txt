@@ -1,0 +1,3 @@
+/Users/yonatanelbaz/ex4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/yonatanelbaz/ex4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yonatanelbaz/ex4/cmake-build-debug/CMakeFiles/ex4.dir

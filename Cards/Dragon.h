@@ -4,8 +4,8 @@
 #include "Card.h"
 
 class Dragon : public Card {
-    static int const dragon_force = 25;
-    static int const dragon_loot = 1000;
+    static int const dragonForce = 25;
+    static int const dragonLoot = 1000;
 
 public:
     Dragon();

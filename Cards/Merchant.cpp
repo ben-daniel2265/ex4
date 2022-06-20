@@ -20,18 +20,18 @@ void Merchant::applyEncounter(Player& player) const
     }
 
     if(choice == "1"){
-        if(player.pay(hp_potion_cost)){
-            player.heal(hp_potion_add_amount);
-            printMerchantSummary(std::cout, player.getName(), 1, hp_potion_cost);
+        if(player.pay(hpPotionCost)){
+            player.heal(hpPotionAddAmount);
+            printMerchantSummary(std::cout, player.getName(), 1, hpPotionCost);
         }
         else{
             printMerchantInsufficientCoins(std::cout);
         }
     }
     else if(choice == "2"){
-        if(player.pay(force_boost_potion_cost)){
-            player.buff(force_boost_potion_add_amount);
-            printMerchantSummary(std::cout, player.getName(), 2, force_boost_potion_cost);
+        if(player.pay(forceBoostPotionCost)){
+            player.buff(forceBoostPotionAddAmount);
+            printMerchantSummary(std::cout, player.getName(), 2, forceBoostPotionCost);
         }
         else{
             printMerchantInsufficientCoins(std::cout);

@@ -4,10 +4,10 @@
 #include "Card.h"
 
 class Merchant : public Card {
-    static int const hp_potion_cost = 5;
-    static int const force_boost_potion_cost = 10;
-    static int const hp_potion_add_amount = 1;
-    static int const force_boost_potion_add_amount = 1;
+    static int const hpPotionCost = 5;
+    static int const forceBoostPotionCost = 10;
+    static int const hpPotionAddAmount = 1;
+    static int const forceBoostPotionAddAmount = 1;
     
 public:
     Merchant();

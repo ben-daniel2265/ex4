@@ -10,7 +10,7 @@ Fairy::Fairy() : Card("Fairy")
 void Fairy::applyEncounter(Player& player) const
 {
     if(player.getJob() == "Wizard"){
-        player.heal(heal_amount);
+        player.heal(healAmount);
         printFairyMessage(true);
     }
     else{

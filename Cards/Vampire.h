@@ -4,9 +4,9 @@
 #include "Card.h"
 
 class Vampire : public Card {
-    static int const vampire_force = 10;
-    static int const vampire_damage = 10;
-    static int const vampire_loot = 2;
+    static int const vampireForce = 10;
+    static int const vampireDamage = 10;
+    static int const vampireLoot = 2;
 
 public:
     Vampire();

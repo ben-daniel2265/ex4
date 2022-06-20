@@ -9,13 +9,13 @@ Vampire::Vampire() : Card("Vampire")
 
 void Vampire::applyEncounter(Player& player) const
 {
-    if(player.getAttackStrength() >= vampire_force){
+    if(player.getAttackStrength() >= vampireForce){
         player.levelUp();
-        player.addCoins(vampire_loot);
+        player.addCoins(vampireLoot);
         printWinBattle(player.getName(), "Vampire");
     }
     else{
-        player.damage(vampire_damage);
+        player.damage(vampireDamage);
         player.debuff(1);
         printLossBattle(player.getName(), "Vampire");
     }
@@ -24,7 +24,7 @@ void Vampire::applyEncounter(Player& player) const
 void Vampire::printInfo(std::ostream &out) const
 {
     printCardDetails(out, "Vampire");
-    printMonsterDetails(out, vampire_force, vampire_damage, vampire_loot, false);
+    printMonsterDetails(out, vampireForce, vampireDamage, vampireLoot, false);
     printEndOfCardDetails(out);
 }
 

@@ -4,7 +4,7 @@
 #include "Card.h"
 
 class Fairy : public Card {
-    static int const heal_amount = 10;
+    static int const healAmount = 10;
 
 public:
     Fairy();

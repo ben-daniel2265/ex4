@@ -4,7 +4,7 @@
 #include "Card.h"
 
 class Treasure : public Card {
-    static int const coin_amount = 10;
+    static int const coinAmount = 10;
 
 public:
     Treasure();

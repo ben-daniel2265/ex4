@@ -9,9 +9,9 @@ Dragon::Dragon() : Card("Dragon")
 
 void Dragon::applyEncounter(Player& player) const
 {
-    if(player.getAttackStrength() >= dragon_force){
+    if(player.getAttackStrength() >= dragonForce){
         player.levelUp();
-        player.addCoins(dragon_loot);
+        player.addCoins(dragonLoot);
         printWinBattle(player.getName(), "Dragon");
     }
     else{
@@ -23,7 +23,7 @@ void Dragon::applyEncounter(Player& player) const
 void Dragon::printInfo(std::ostream &out) const
 {
     printCardDetails(out, "Dragon");
-    printMonsterDetails(out, dragon_force, 0, dragon_loot, true);
+    printMonsterDetails(out, dragonForce, 0, dragonLoot, true);
     printEndOfCardDetails(out);
 }
 

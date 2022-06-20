@@ -9,7 +9,7 @@ Treasure::Treasure() : Card("Treasure")
 
 void Treasure::applyEncounter(Player& player) const
 {
-    player.addCoins(coin_amount);
+    player.addCoins(coinAmount);
     printTreasureMessage();
 }
 
