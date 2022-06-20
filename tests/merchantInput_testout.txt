@@ -37,13 +37,13 @@ Health Potion (heals 1 health point) : 5 coins per potion.
 Force boost (adds 1 force): 10 coins per boost.
 Enter 1 for Health Potion, 2 for force boost or 0 to leave.
 rocky has 12 coins
-rocky has paid 5 coins for 1 health potion!
+rocky has paid 0 coins 
 Safe travels!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
 1          matamDalf       2         5     100   7     Wizard  
-2          rocky           2         5     100   7     Fighter  
+2          rocky           2         5     100   12    Fighter  
 
 -------------------------------------------
 Start of round 3:
@@ -55,7 +55,7 @@ Player rocky has defeated Goblin and rose 1 Level!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           3         5     100   9     Fighter  
+1          rocky           3         5     100   14    Fighter  
 2          matamDalf       2         5     0     7     Wizard  
 
 -------------------------------------------
@@ -66,7 +66,7 @@ Player rocky has defeated Goblin and rose 1 Level!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           4         5     100   11    Fighter  
+1          rocky           4         5     100   16    Fighter  
 2          matamDalf       2         5     0     7     Wizard  
 
 -------------------------------------------
@@ -78,13 +78,13 @@ Browse his wares:
 Health Potion (heals 1 health point) : 5 coins per potion.
 Force boost (adds 1 force): 10 coins per boost.
 Enter 1 for Health Potion, 2 for force boost or 0 to leave.
-rocky has 11 coins
-rocky has paid 0 coins 
+rocky has 16 coins
+rocky has paid 10 coins for 1 force boost!
 Safe travels!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           4         5     100   11    Fighter  
+1          rocky           4         6     100   6     Fighter  
 2          matamDalf       2         5     0     7     Wizard  
 
 -------------------------------------------
@@ -96,13 +96,13 @@ Browse his wares:
 Health Potion (heals 1 health point) : 5 coins per potion.
 Force boost (adds 1 force): 10 coins per boost.
 Enter 1 for Health Potion, 2 for force boost or 0 to leave.
-rocky has 11 coins
-rocky has paid 10 coins for 1 force boost!
+rocky has 6 coins
+rocky has paid 0 coins 
 Safe travels!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           4         6     100   1     Fighter  
+1          rocky           4         6     100   6     Fighter  
 2          matamDalf       2         5     0     7     Wizard  
 
 -------------------------------------------
@@ -114,5 +114,5 @@ The Game has ended!!!
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          rocky           4         6     0     1     Fighter  
+1          rocky           4         6     0     6     Fighter  
 2          matamDalf       2         5     0     7     Wizard  

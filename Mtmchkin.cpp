@@ -92,26 +92,31 @@ Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
 
     printStartGameMessage();
 
+
     int num_of_players = 0;
+    std::string numInput;
+    std::string nameAndJob;
     std::string name;
     std::string job;
+
     printEnterTeamSizeMessage();
 
-    std::cin >> num_of_players;
+    getline(std::cin, numInput);
+    num_of_players = std::stoi(numInput);
 
     while(num_of_players < 2 || num_of_players > 6){
         printInvalidTeamSize();
         printEnterTeamSizeMessage();
-        std::cin >> num_of_players;    
+        getline(std::cin, numInput);
+        num_of_players = std::stoi(numInput);  
     }
 
     this->m_player_num = num_of_players;
 
     printInsertPlayerMessage();
-    while(num_of_players > 0){
-        std::cin >> name;
-        std::cin >> job;
-
+    while(num_of_players > 0 && getline(std::cin, nameAndJob)){
+        name = nameAndJob.substr(0, nameAndJob.find(" "));
+        job = nameAndJob.substr(nameAndJob.find(" ") + 1);;
         if(validName(name) && isRealJob(job)){
             if(job == "Wizard"){
                 this->m_players.push_back(std::unique_ptr<Player>(new Wizard(name)));

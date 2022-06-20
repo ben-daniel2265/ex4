@@ -13,7 +13,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   30    Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -26,7 +26,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   50    Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -39,7 +39,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   70    Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -52,7 +52,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   90    Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -65,7 +65,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   110   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -78,7 +78,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   130   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -91,7 +91,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   150   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -104,7 +104,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   170   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -117,7 +117,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   190   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -130,7 +130,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   210   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -143,7 +143,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   230   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -156,7 +156,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   250   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -169,7 +169,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   270   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -182,7 +182,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   290   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -195,7 +195,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   310   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -208,7 +208,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   330   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -221,7 +221,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   350   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -234,7 +234,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   370   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -247,7 +247,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   390   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -260,7 +260,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   410   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -273,7 +273,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   430   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -286,7 +286,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   450   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -299,7 +299,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   470   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -312,7 +312,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   490   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -325,7 +325,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   510   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -338,7 +338,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   530   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -351,7 +351,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   550   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -364,7 +364,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   570   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -377,7 +377,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   590   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -390,7 +390,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   610   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -403,7 +403,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   630   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -416,7 +416,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   650   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -429,7 +429,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   670   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -442,7 +442,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   690   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -455,7 +455,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   710   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -468,7 +468,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   730   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -481,7 +481,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   750   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -494,7 +494,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   770   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -507,7 +507,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   790   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -520,7 +520,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   810   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -533,7 +533,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   830   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -546,7 +546,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   850   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -559,7 +559,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   870   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -572,7 +572,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   890   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -585,7 +585,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   910   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -598,7 +598,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   930   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -611,7 +611,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   950   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -624,7 +624,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   970   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -637,7 +637,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   990   Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -650,7 +650,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1010  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -663,7 +663,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1030  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -676,7 +676,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1050  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -689,7 +689,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1070  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -702,7 +702,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1090  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -715,7 +715,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1110  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -728,7 +728,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1130  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -741,7 +741,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1150  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -754,7 +754,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1170  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -767,7 +767,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1190  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -780,7 +780,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1210  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -793,7 +793,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1230  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -806,7 +806,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1250  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -819,7 +819,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1270  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -832,7 +832,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1290  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -845,7 +845,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1310  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -858,7 +858,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1330  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -871,7 +871,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1350  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -884,7 +884,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1370  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -897,7 +897,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1390  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -910,7 +910,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1410  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -923,7 +923,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1430  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -936,7 +936,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1450  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -949,7 +949,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1470  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -962,7 +962,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1490  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -975,7 +975,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1510  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -988,7 +988,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1530  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1001,7 +1001,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1550  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1014,7 +1014,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1570  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1027,7 +1027,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1590  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1040,7 +1040,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1610  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1053,7 +1053,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1630  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1066,7 +1066,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1650  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1079,7 +1079,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1670  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1092,7 +1092,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1690  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1105,7 +1105,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1710  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1118,7 +1118,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1730  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1131,7 +1131,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1750  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1144,7 +1144,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1770  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1157,7 +1157,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1790  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1170,7 +1170,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1810  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1183,7 +1183,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1830  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1196,7 +1196,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1850  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1209,7 +1209,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1870  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1222,7 +1222,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1890  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1235,7 +1235,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1910  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1248,7 +1248,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1930  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1261,7 +1261,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1950  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1274,7 +1274,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1970  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1287,7 +1287,7 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   1990  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  
 
 -------------------------------------------
@@ -1300,5 +1300,5 @@ Nothing happened.
 
 The current ranking of the Team:
 Ranking    Player Name     Level     Force HP    Coins Job
-1          matamDalf       1         5     100   2010  Wizard  
+1          matamDalf       1         5     100   10    Wizard  
 2          rocky           1         5     100   10    Fighter  

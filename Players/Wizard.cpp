@@ -9,7 +9,7 @@ Wizard::Wizard(std::string name, int baseMaxHP, int baseForce) :
 
 void Wizard::heal(int healAmount)
 {
-    Player::addCoins(healAmount*2);
+    Player::heal(healAmount*2);
 }
 
 

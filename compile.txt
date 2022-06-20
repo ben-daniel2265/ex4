@@ -1,0 +1,1 @@
+g++ test.cpp Mtmchkin.cpp utilities.cpp Players\**.cpp Cards\**.cpp

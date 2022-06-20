@@ -14,12 +14,15 @@ class DeckFileNotFound
 
 class DeckFileFormatError
 {
-    int line;
+    std::string result;
 
     public:
-    DeckFileFormatError(int line) : line(line) {};
+    DeckFileFormatError(int line) 
+    {
+        this->result = "Deck File Error: File format error in line " + std::to_string(line);
+    };
     const char* what() const{
-        return ("Deck File Error: File format error in line " + std::to_string(line)).c_str();
+        return this->result.data();
     }
 };
 
