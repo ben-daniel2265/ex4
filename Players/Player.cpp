@@ -8,7 +8,7 @@
 #define BASE_ATTACK 5
 
 
-Player::Player(const std::string name, std::string job, int baseMaxHP, int baseForce)
+Player::Player(const std::string name, int baseMaxHP, int baseForce)
 {
     this->m_name = name;
     this->m_level = 1;
@@ -16,7 +16,6 @@ Player::Player(const std::string name, std::string job, int baseMaxHP, int baseF
     this->m_maxHP = baseMaxHP > 0 ? baseMaxHP : BASE_HP;
     this->m_HP = baseMaxHP;
     this->m_coins = 10;
-    this->m_job = job;
 }
 
 Player::Player(const Player& player)
@@ -27,7 +26,6 @@ Player::Player(const Player& player)
     this->m_maxHP = player.m_maxHP;
     this->m_HP = player.m_HP;
     this->m_coins = player.m_coins;
-    this->m_job = player.m_job;
 }
 
 Player& Player::operator=(const Player& player)
@@ -42,7 +40,6 @@ Player& Player::operator=(const Player& player)
     this->m_maxHP = player.m_maxHP;
     this->m_HP = player.m_HP;
     this->m_coins = player.m_coins;
-    this->m_job = player.m_job;
 
     return *this;
 }
@@ -62,11 +59,6 @@ int Player::getLevel() const
 int Player::getCoins() const
 {
     return m_coins;
-}
-
-std::string Player::getJob() const
-{
-    return m_job;
 }
 
 void Player::buff(int buffAmount)
@@ -143,7 +135,7 @@ void Player::knockOut()
 
 std::ostream& operator<<(std::ostream &out, const Player& player)
 {
-    printPlayerDetails(out, player.m_name, player.m_job, player.m_level, player.m_force, player.m_HP, player.m_coins);
+    printPlayerDetails(out, player.m_name, player.getJob(), player.m_level, player.m_force, player.m_HP, player.m_coins);
     return out;
 }
 

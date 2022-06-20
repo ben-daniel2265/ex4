@@ -5,13 +5,16 @@
 
 
 Wizard::Wizard(std::string name, int baseMaxHP, int baseForce) : 
-    Player(name, "Wizard", baseMaxHP, baseForce){}
+    Player(name, baseMaxHP, baseForce){}
 
 void Wizard::heal(int healAmount)
 {
     Player::heal(healAmount*2);
 }
 
-
+std::string Wizard::getJob() const
+{
+    return "Wizard";
+}
 
 #endif // HW4_WIZARD_SOURCE 

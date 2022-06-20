@@ -85,13 +85,14 @@ void getNumOfPlayers(int &numOfPlayers){
     getline(std::cin, numInput);
     numOfPlayers = std::stoi(numInput);
 
-    while(numOfPlayers < 2 || numOfPlayers > 6){
+    while(numOfPlayers < minTeamSize || numOfPlayers > maxTeamSize){
         printInvalidTeamSize();
         printEnterTeamSizeMessage();
         getline(std::cin, numInput);
         numOfPlayers = std::stoi(numInput);  
     }
 }
+
 
 Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
 {

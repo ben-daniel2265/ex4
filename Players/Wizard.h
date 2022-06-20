@@ -9,6 +9,7 @@ class Wizard : public Player {
     Wizard(std::string name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
 
     void heal(int healAmount) override;
+    std::string getJob() const override;
 };
 
 

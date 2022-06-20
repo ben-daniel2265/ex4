@@ -9,6 +9,7 @@ class Fighter : public Player {
     Fighter(std::string name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
 
     int getAttackStrength() const override;
+    std::string getJob() const override;
 };
 
 

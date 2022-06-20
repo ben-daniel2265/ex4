@@ -15,15 +15,13 @@ class Player{
     int m_maxHP;
     int m_HP;
     int m_coins;
-    std::string m_job;
-
 
     public:
     /*
     *  Constractor 1:
     *  only name given
     */
-    Player(const std::string name, std::string job, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
+    Player(const std::string name, int baseMaxHP = BASE_HP, int baseForce = BASE_ATTACK);
     Player(const Player& player);
     ~Player() = default;
     Player& operator=(const Player& player);
@@ -31,10 +29,10 @@ class Player{
     virtual void heal(int healAmount);
     virtual void addCoins(int coinAmount);
     virtual int getAttackStrength() const;
+    virtual std::string getJob() const = 0;
     void levelUp();
     int getLevel() const;
     int getCoins() const;
-    std::string getJob() const;
     void buff(int buffAmount);
     void debuff(int debuffAmount);
     void damage(int damageAmount);
