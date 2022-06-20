@@ -3,8 +3,10 @@
 
 #include "Card.h"
 
+static int const damage_amount = 10;
+
 class Barfight : public Card {
-    static int const damage_amount = 10;
+
 
 public:
     Barfight();

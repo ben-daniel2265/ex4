@@ -3,10 +3,11 @@
 
 #include "Card.h"
 
+static int const vampireForce = 10;
+static int const vampireDamage = 10;
+static int const vampireLoot = 2;
+
 class Vampire : public Card {
-    static int const vampireForce = 10;
-    static int const vampireDamage = 10;
-    static int const vampireLoot = 2;
 
 public:
     Vampire();

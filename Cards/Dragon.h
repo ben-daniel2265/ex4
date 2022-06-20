@@ -3,9 +3,10 @@
 
 #include "Card.h"
 
+static int const dragonForce = 25;
+static int const dragonLoot = 1000;
+
 class Dragon : public Card {
-    static int const dragonForce = 25;
-    static int const dragonLoot = 1000;
 
 public:
     Dragon();

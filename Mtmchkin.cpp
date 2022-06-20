@@ -1,5 +1,10 @@
 #ifndef MTMCHKIN_Source
-#define MTMCHKIN_Source
+#define MTMCHKIN_Source 
+
+static int const maxLevel =  10;
+static int const maxStringLength = 15;
+static int const maxTeamSize = 6;
+static int const minTeamSize = 2;
 
 #include "Mtmchkin.h"
 #include "Cards/Dragon.h"
@@ -20,7 +25,7 @@
 
 bool validName(std::string const &str) {
     return str.find_first_not_of("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") ==
-        std::string::npos && str.length() <= 15;
+        std::string::npos && str.length() <= maxStringLength;
 }
 
 bool isRealJob(std::string const &str) {
@@ -28,7 +33,7 @@ bool isRealJob(std::string const &str) {
 }
 
 bool isOut(Player &player){
-    return player.isKnockedOut() || player.getLevel() == 10;
+    return player.isKnockedOut() || player.getLevel() == maxLevel;
 }
 
 
@@ -155,9 +160,9 @@ void Mtmchkin::playRound()
             if(isOut(*(this->m_players.at(i).get()))){
                 this->m_out_players++;
 
-                if(this->m_players.at(i).get()->getLevel() == 10){
+                if(this->m_players.at(i).get()->getLevel() == maxLevel){
                     int place = i;
-                    while(place >= 1 && m_players.at(place - 1)->getLevel() != 10){
+                    while(place >= 1 && m_players.at(place - 1)->getLevel() != maxLevel){
                         std::swap(m_players[place], m_players[place - 1]);
                         place--;
                     }                    //addWinner(this->m_players, i);
