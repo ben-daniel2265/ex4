@@ -28,6 +28,10 @@ bool validName(std::string const &str) {
         std::string::npos && str.length() <= maxStringLength;
 }
 
+bool validNum(std::string const &str) {
+    return str != "" && str.find_first_not_of("0123456789") == std::string::npos;
+}
+
 bool isRealJob(std::string const &str) {
     return str == "Wizard" || str == "Fighter" || str == "Rogue";
 }
@@ -37,29 +41,29 @@ bool isOut(Player &player){
 }
 
 
-Card* getTypeCard(const char *card, int lineNum){
-    if(!strcmp(card, "Dragon")){
+Card* getTypeCard(std::string card, int lineNum){
+    if(card == "Dragon"){
         return new Dragon();
     }
-    else if(!strcmp(card, "Goblin")){
+    else if(card == "Goblin"){
         return new Goblin();
     }
-    else if(!strcmp(card, "Vampire")){
+    else if(card == "Vampire"){
         return new Vampire();
     }
-    else if(!strcmp(card, "Merchant")){
+    else if(card == "Merchant"){
         return new Merchant();
     }
-    else if(!strcmp(card, "Treasure")){
+    else if(card == "Treasure"){
         return new Treasure();
     }
-    else if(!strcmp(card, "Pitfall")){
+    else if(card == "Pitfall"){
         return new Pitfall();
     }
-    else if(!strcmp(card, "Barfight")){
+    else if(card == "Barfight"){
        return new Barfight();
     }
-    else if(!strcmp(card, "Fairy")){
+    else if(card == "Fairy"){
         return new Fairy();
     }
     else{
@@ -83,34 +87,37 @@ Player* getTypePlayer(std::string playerName, std::string playerClass){
 void getNumOfPlayers(int &numOfPlayers){
     std::string numInput;
     getline(std::cin, numInput);
-    numOfPlayers = std::stoi(numInput);
+    if(validNum(numInput)){
+        numOfPlayers = std::stoi(numInput);
+    }
 
     while(numOfPlayers < minTeamSize || numOfPlayers > maxTeamSize){
         printInvalidTeamSize();
         printEnterTeamSizeMessage();
         getline(std::cin, numInput);
-        numOfPlayers = std::stoi(numInput);  
+        if(validNum(numInput)){
+            numOfPlayers = std::stoi(numInput);
+        }  
     }
 }
 
 
 Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
 {
+    printStartGameMessage();
     std::ifstream file(fileName);
     if(!file){
         throw DeckFileNotFound();
     }
 
-    char line[256];
+    std::string line;
     int line_num = 0;
-    while(file.getline(line, sizeof(line))){
+    while(getline(file, line)){
         this->m_deck.push(std::unique_ptr<Card>(getTypeCard(line, ++line_num)));
     }
     if(line_num < 5){
         throw DeckFileInvalidSize();
     }
-
-    printStartGameMessage();
 
     int numOfPlayers = 0;
     std::string nameAndJob;

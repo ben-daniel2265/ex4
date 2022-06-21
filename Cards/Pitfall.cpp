@@ -21,6 +21,7 @@ void Pitfall::applyEncounter(Player& player) const
 void Pitfall::printInfo(std::ostream &out) const
 {
     printCardDetails(out, "Pitfall");
+    printEndOfCardDetails(out);
 }
 
 

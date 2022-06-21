@@ -26,6 +26,7 @@ void Merchant::applyEncounter(Player& player) const
         }
         else{
             printMerchantInsufficientCoins(std::cout);
+            printMerchantSummary(std::cout, player.getName(), 1, 0);
         }
     }
     else if(choice == "2"){
@@ -35,6 +36,7 @@ void Merchant::applyEncounter(Player& player) const
         }
         else{
             printMerchantInsufficientCoins(std::cout);
+            printMerchantSummary(std::cout, player.getName(), 2, 0);
         }
     }
     else{

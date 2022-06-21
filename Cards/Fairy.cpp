@@ -21,6 +21,7 @@ void Fairy::applyEncounter(Player& player) const
 void Fairy::printInfo(std::ostream &out) const
 {
     printCardDetails(out, "Fairy");
+    printEndOfCardDetails(out);
 }
 
 
