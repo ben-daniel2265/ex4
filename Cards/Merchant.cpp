@@ -6,6 +6,7 @@
 
 Merchant::Merchant() : Card("Merchant")
 {}
+static const int forceBoostPotion = 2;
 
 void Merchant::applyEncounter(Player& player) const
 {
@@ -32,11 +33,11 @@ void Merchant::applyEncounter(Player& player) const
     else if(choice == "2"){
         if(player.pay(forceBoostPotionCost)){
             player.buff(forceBoostPotionAddAmount);
-            printMerchantSummary(std::cout, player.getName(), 2, forceBoostPotionCost);
+            printMerchantSummary(std::cout, player.getName(), forceBoostPotion, forceBoostPotionCost);
         }
         else{
             printMerchantInsufficientCoins(std::cout);
-            printMerchantSummary(std::cout, player.getName(), 2, 0);
+            printMerchantSummary(std::cout, player.getName(), forceBoostPotion, 0);
         }
     }
     else{

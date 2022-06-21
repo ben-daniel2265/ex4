@@ -4,7 +4,7 @@
 #include "Dragon.h"
 
 
-Dragon::Dragon() : Card("Dragon")
+Dragon::Dragon() : BattleCard("Dragon")
 {}
 
 void Dragon::applyEncounter(Player& player) const
@@ -18,6 +18,17 @@ void Dragon::applyEncounter(Player& player) const
         player.knockOut();
         printLossBattle(player.getName(), "Dragon");
     }
+}
+
+void Dragon::playerLost(Player&player) const
+{
+    player.knockOut();
+    printLossBattle(player.getName(), "Dragon");
+}
+
+bool Dragon::fightResult(Player& player) const
+{
+    return player.getAttackStrength() >= dragonForce;
 }
 
 void Dragon::printInfo(std::ostream &out) const

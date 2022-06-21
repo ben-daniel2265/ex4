@@ -26,4 +26,4 @@ add_executable(ex4
         test.cpp
         utilities.cpp
         utilities.h
-        main.cpp)
+        main.cpp Cards/BattleCard.cpp)

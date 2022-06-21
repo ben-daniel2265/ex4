@@ -9,9 +9,9 @@
 class Mtmchkin{
     std::vector<std::unique_ptr<Player>> m_players;
     std::queue<std::unique_ptr<Card>> m_deck;
-    int m_player_num;
+    int m_playerNum;
     int m_round;
-    int m_out_players;
+    int m_outPlayers;
 public:
     
     /*

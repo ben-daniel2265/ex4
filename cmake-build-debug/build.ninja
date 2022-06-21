@@ -142,6 +142,13 @@ build CMakeFiles/ex4.dir/main.cpp.o: CXX_COMPILER__ex4_Debug /Users/yonatanelbaz
   OBJECT_DIR = CMakeFiles/ex4.dir
   OBJECT_FILE_DIR = CMakeFiles/ex4.dir
 
+build CMakeFiles/ex4.dir/Cards/BattleCard.cpp.o: CXX_COMPILER__ex4_Debug /Users/yonatanelbaz/ex4/Cards/BattleCard.cpp || cmake_object_order_depends_target_ex4
+  DEP_FILE = CMakeFiles/ex4.dir/Cards/BattleCard.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/yonatanelbaz/ex4/. -I/Users/yonatanelbaz/ex4/Cards -I/Users/yonatanelbaz/ex4/Players
+  OBJECT_DIR = CMakeFiles/ex4.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex4.dir/Cards
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ex4
@@ -150,7 +157,7 @@ build CMakeFiles/ex4.dir/main.cpp.o: CXX_COMPILER__ex4_Debug /Users/yonatanelbaz
 #############################################
 # Link the executable ex4
 
-build ex4: CXX_EXECUTABLE_LINKER__ex4_Debug CMakeFiles/ex4.dir/Cards/Card.cpp.o CMakeFiles/ex4.dir/Cards/Goblin.cpp.o CMakeFiles/ex4.dir/Players/Fighter.cpp.o CMakeFiles/ex4.dir/Players/Player.cpp.o CMakeFiles/ex4.dir/Players/Rogue.cpp.o CMakeFiles/ex4.dir/Players/Wizard.cpp.o CMakeFiles/ex4.dir/Mtmchkin.cpp.o CMakeFiles/ex4.dir/test.cpp.o CMakeFiles/ex4.dir/utilities.cpp.o CMakeFiles/ex4.dir/main.cpp.o
+build ex4: CXX_EXECUTABLE_LINKER__ex4_Debug CMakeFiles/ex4.dir/Cards/Card.cpp.o CMakeFiles/ex4.dir/Cards/Goblin.cpp.o CMakeFiles/ex4.dir/Players/Fighter.cpp.o CMakeFiles/ex4.dir/Players/Player.cpp.o CMakeFiles/ex4.dir/Players/Rogue.cpp.o CMakeFiles/ex4.dir/Players/Wizard.cpp.o CMakeFiles/ex4.dir/Mtmchkin.cpp.o CMakeFiles/ex4.dir/test.cpp.o CMakeFiles/ex4.dir/utilities.cpp.o CMakeFiles/ex4.dir/main.cpp.o CMakeFiles/ex4.dir/Cards/BattleCard.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/ex4.dir
   POST_BUILD = :

@@ -4,7 +4,7 @@
 #include "Goblin.h"
 
 
-Goblin::Goblin() : Card("Goblin")
+Goblin::Goblin() : BattleCard("Goblin")
 {}
 
 void Goblin::applyEncounter(Player& player) const
@@ -18,6 +18,16 @@ void Goblin::applyEncounter(Player& player) const
         player.damage(goblinDamage);
         printLossBattle(player.getName(), "Goblin");
     }
+}
+
+void Goblin::playerLost(Player &player) const {
+    player.damage(goblinDamage);
+    printLossBattle(player.getName(), "Goblin");
+}
+
+bool Goblin::fightResult(Player& player) const
+{
+    return player.getAttackStrength() >= goblinForce;
 }
 
 void Goblin::printInfo(std::ostream &out) const

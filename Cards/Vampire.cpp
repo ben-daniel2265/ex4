@@ -4,7 +4,7 @@
 #include "Vampire.h"
 
 
-Vampire::Vampire() : Card("Vampire")
+Vampire::Vampire() : BattleCard("Vampire")
 {}
 
 void Vampire::applyEncounter(Player& player) const
@@ -19,6 +19,17 @@ void Vampire::applyEncounter(Player& player) const
         player.debuff(1);
         printLossBattle(player.getName(), "Vampire");
     }
+}
+
+void Vampire::playerLost(Player &player) const {
+    player.damage(vampireDamage);
+    player.debuff(1);
+    printLossBattle(player.getName(), "Vampire");
+}
+
+bool Vampire::fightResult(Player& player) const
+{
+    return player.getAttackStrength() >= vampireForce;
 }
 
 void Vampire::printInfo(std::ostream &out) const

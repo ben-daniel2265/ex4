@@ -5,6 +5,7 @@ static int const maxLevel =  10;
 static int const maxStringLength = 15;
 static int const maxTeamSize = 6;
 static int const minTeamSize = 2;
+static int const minDeckSize = 5;
 
 #include "Mtmchkin.h"
 #include "Cards/Dragon.h"
@@ -15,6 +16,8 @@ static int const minTeamSize = 2;
 #include "Cards/Barfight.h"
 #include "Cards/Fairy.h"
 #include "Cards/Treasure.h"
+#include "Cards/Gang.h"
+#include "Cards/BattleCard.h"
 #include "Players/Rogue.h"
 #include "Players/Wizard.h"
 #include "Players/Fighter.h"
@@ -40,6 +43,7 @@ bool isOut(Player &player){
     return player.isKnockedOut() || player.getLevel() == maxLevel;
 }
 
+//Card* getGangCards()
 
 Card* getTypeCard(std::string card, int lineNum){
     if(card == "Dragon"){
@@ -65,6 +69,21 @@ Card* getTypeCard(std::string card, int lineNum){
     }
     else if(card == "Fairy"){
         return new Fairy();
+    }
+    else{
+        throw DeckFileFormatError(lineNum);
+    }
+}
+
+BattleCard* getTypeBattleCard(std::string card, int lineNum){
+    if(card == "Dragon"){
+        return new Dragon();
+    }
+    else if(card == "Goblin"){
+        return new Goblin();
+    }
+    else if(card == "Vampire"){
+        return new Vampire();
     }
     else{
         throw DeckFileFormatError(lineNum);
@@ -102,7 +121,7 @@ void getNumOfPlayers(int &numOfPlayers){
 }
 
 
-Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
+Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_outPlayers(0)
 {
     printStartGameMessage();
     std::ifstream file(fileName);
@@ -111,11 +130,29 @@ Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
     }
 
     std::string line;
-    int line_num = 0;
+    int lineNum = 0;
+    int totalGangsSize = 0;
     while(getline(file, line)){
-        this->m_deck.push(std::unique_ptr<Card>(getTypeCard(line, ++line_num)));
+        if(line == "Gang"){
+            Gang *gang = new Gang;
+            int gangSize = 0;
+            while(line != "EndGang"){
+                if(getline(file, line)){
+                    gang->addMember(getTypeBattleCard(line, ++lineNum));
+                    gangSize++;
+                }
+                else{
+                    throw DeckFileFormatError(lineNum);
+                }
+            }
+            totalGangsSize += gangSize;
+            this->m_deck.push(std::unique_ptr<Card>(gang));
+        }
+        else{
+            this->m_deck.push(std::unique_ptr<Card>(getTypeCard(line, ++lineNum)));
+        }
     }
-    if(line_num < 5){
+    if(lineNum - totalGangsSize < minDeckSize){
         throw DeckFileInvalidSize();
     }
 
@@ -128,7 +165,7 @@ Mtmchkin::Mtmchkin(const std::string fileName) : m_round(0), m_out_players(0)
 
     getNumOfPlayers(numOfPlayers);
 
-    this->m_player_num = numOfPlayers;
+    this->m_playerNum = numOfPlayers;
 
     printInsertPlayerMessage();
 
@@ -157,16 +194,16 @@ void Mtmchkin::playRound()
 {
     this->m_round++;
     printRoundStartMessage(this->m_round);
-    std::unique_ptr<Card> current_card;
+    std::unique_ptr<Card> currentCard;
 
-    for(int i = 0; i < m_player_num; i++){
+    for(int i = 0; i < m_playerNum; i++){
         if(!isOut(*(this->m_players.at(i).get()))){
-            current_card = move(this->m_deck.front());
+            currentCard = move(this->m_deck.front());
 
             printTurnStartMessage(this->m_players.at(i)->getName());
-            current_card->applyEncounter(*(this->m_players.at(i).get()));
+            currentCard->applyEncounter(*(this->m_players.at(i).get()));
             if(isOut(*(this->m_players.at(i).get()))){
-                this->m_out_players++;
+                this->m_outPlayers++;
 
                 if(this->m_players.at(i).get()->getLevel() == maxLevel){
                     int place = i;
@@ -188,7 +225,7 @@ void Mtmchkin::playRound()
                 }
             } 
             this->m_deck.pop();
-            this->m_deck.push(move(current_card));
+            this->m_deck.push(move(currentCard));
         }
     }
     if(isGameOver()){
@@ -199,14 +236,14 @@ void Mtmchkin::playRound()
 void Mtmchkin::printLeaderBoard() const
 {
     printLeaderBoardStartMessage();
-    for(int i = 0; i < this->m_player_num; i++){
+    for(int i = 0; i < this->m_playerNum; i++){
         printPlayerLeaderBoard(i+1, *(this->m_players.at(i).get()));
     }
 }
 
 bool Mtmchkin::isGameOver() const
 {
-    return this->m_out_players == this->m_player_num;
+    return this->m_outPlayers == this->m_playerNum;
 }
 
 int Mtmchkin::getNumberOfRounds() const
