@@ -26,6 +26,11 @@ void Dragon::playerLost(Player&player) const
     printLossBattle(player.getName(), "Dragon");
 }
 
+void Dragon::playerWon(Player &player) const {
+    player.addCoins(dragonLoot);
+    printWinBattle(player.getName(), "Dragon");
+}
+
 bool Dragon::fightResult(Player& player) const
 {
     return player.getAttackStrength() >= dragonForce;

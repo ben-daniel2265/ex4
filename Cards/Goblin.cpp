@@ -25,6 +25,11 @@ void Goblin::playerLost(Player &player) const {
     printLossBattle(player.getName(), "Goblin");
 }
 
+void Goblin::playerWon(Player &player) const {
+    player.addCoins(goblinLoot);
+    printWinBattle(player.getName(), "Goblin");
+}
+
 bool Goblin::fightResult(Player& player) const
 {
     return player.getAttackStrength() >= goblinForce;

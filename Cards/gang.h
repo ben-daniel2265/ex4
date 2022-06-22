@@ -4,6 +4,7 @@
 #include "Card.h"
 #include "BattleCard.h"
 #include <queue>
+#include <memory>
 
 
 class Gang : public Card {

@@ -14,6 +14,7 @@ public:
     void applyEncounter(Player& player) const override;
     void printInfo(std::ostream &out) const override;
     void playerLost(Player& player) const override;
+    void playerWon(Player& player) const override;
     bool fightResult(Player& player) const override;
 
     Dragon(const Dragon&) = default;

@@ -17,9 +17,11 @@ void Gang::applyEncounter(Player& player)
         std::unique_ptr<BattleCard> currentCard;
         currentCard = move(this->m_gang.front());
         if(!lost){
-            currentCard.get()->applyEncounter(player);
             if(!currentCard.get()->fightResult(player)){
                 lost = true;
+            }
+            else{
+                currentCard.get()->playerWon(player);
             }
             currentCard = move(this->m_gang.front());
 
@@ -29,6 +31,10 @@ void Gang::applyEncounter(Player& player)
         else{
             currentCard.get()->playerLost(player);
         }
+    }
+
+    if(!lost){
+        player.levelUp();
     }
 }
 

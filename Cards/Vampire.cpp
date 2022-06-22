@@ -27,6 +27,11 @@ void Vampire::playerLost(Player &player) const {
     printLossBattle(player.getName(), "Vampire");
 }
 
+void Vampire::playerWon(Player &player) const {
+    player.addCoins(vampireLoot);
+    printWinBattle(player.getName(), "Vampire");
+}
+
 bool Vampire::fightResult(Player& player) const
 {
     return player.getAttackStrength() >= vampireForce;
